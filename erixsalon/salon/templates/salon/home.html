@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salon</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <div class = "main">
+        <div class="header" id="home">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn  text-white" href="https://docs.google.com/forms/d/e/1FAIpQLSfluBEXM6QcRlTOPOAzZkEa6bkdmmBRjlVuasXS79sUMNsZgg/viewform?usp=sf_link" target="_blank">Book Appointment</a>
+                </li>
+            </ul>
+            
+        </div>
+        <div class="body-section">
+            <h1>ERIX <br> SALON</h1>
+            <p>Experience premium grooming at Erix Salon, where expert stylists deliver cutting-edge haircuts and luxurious shaves tailored for the modern man.<br>
+                Elevate your style and confidence in a sleek, sophisticated atmosphere.</p>
+        </div>  
+         
+
+    <!-- Hero Section -->
+    <header class="hero  text-white text-center py-5">
+        <div class="container">
+            <img src="{% static 'images/saloon.jpg' %}" alt="Salon" class="img-fluid mb-3 salon-image" >
+            <h1 class="display-4">Welcome to Kerala Style Salon </h1>
+            <p class="lead">Experience top-notch beauty and grooming services</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfluBEXM6QcRlTOPOAzZkEa6bkdmmBRjlVuasXS79sUMNsZgg/viewform?usp=sf_link" target="_blank" class="btn btn-secondary btn-lg">Book Now</a>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    
+    <section id="services" class="service-container">
+        <h1 class="text-center serv">Services</h1>
+        
+        <div class="wrapper">
+            <div class="containerw">
+                <input type="radio" name="slide" id="c1" >
+                <label for="c1" class="card" >
+            
+                    <div class="row">
+                        <div class="icon">1</div>
+                        <div class="description">
+                            <h4>Haircut</h4>
+                            <p>Professional haircuts to suit your style</p>
+                        </div>
+                        
+                    </div>
+                </label> 
+                
+                <input type="radio" name="slide" id="c2" >
+                <label for="c2" class="card">
+            
+                    <div class="row">
+                        <div class="icon">2</div>
+                        <div class="description">
+                            <h4>Beard Setting</h4>
+                            <p>Get your beard styled by our experts</p>
+                        </div>
+                        
+                    </div>
+                </label> 
+
+                <input type="radio" name="slide" id="c3" checked>
+                <label for="c3" class="card">
+            
+                    <div class="row">
+                        <div class="icon">3</div>
+                        <div class="description">
+                            <h4>Hair Coloring</h4>
+                            <p>Choose from a range of vibrant colors</p>
+                        </div>
+                        
+                    </div>
+                </label> 
+
+                <input type="radio" name="slide" id="c4" >
+                <label for="c4" class="card">
+            
+                    <div class="row">
+                        <div class="icon">4</div>
+                        <div class="description">
+                            <h4>Henna Treatment</h4>
+                            <p>Natural henna treatment for healthy hair</p>
+                        </div>
+                        
+                    </div>
+                </label>
+
+                <input type="radio" name="slide" id="c5" >
+                <label for="c5" class="card">
+            
+                    <div class="row">
+                        <div class="icon">5</div>
+                        <div class="description">
+                            <h4>Head Massage</h4>
+                            <p>Relaxing head massages to relieve stress</p>
+                        </div>
+                        
+                    </div>
+                </label>
+                
+                <input type="radio" name="slide" id="c6" >
+                <label for="c6" class="card">
+            
+                    <div class="row">
+                        <div class="icon">6</div>
+                        <div class="description">
+                            <h4>Beard Colouring</h4>
+                            <p>Choose from a range of vibrant colors</p>
+                        </div>
+                        
+                    </div>
+                </label>
+                
+                
+                
+                
+            </div>
+            
+        </div>
+    </section>	
+
+    <!-- Gallery Section -->
+    
+    <section id="Gallery" class=" py-56">
+        <h1 class="text-center mb-8 gal">Gallery</h1><br><br><br>
+        <div class="containerr">
+            <span class="slider" id="slider1"></span>
+            <span class="slider" id="slider2"></span>
+            <span class="slider" id="slider3"></span>
+            <span class="slider" id="slider4"></span>
+            <span class="slider" id="slider5"></span>
+            <span class="slider" id="slider6"></span>
+            <span class="slider" id="slider7"></span>
+            <span class="slider" id="slider8"></span>
+    
+            <div class="imgContainerr">
+    
+               <div class="slide_div" id="slide_1">
+                
+                <img src="{% static 'images/erix1.jpg' %}" alt="" class="imger" id="img1">
+                <a href="#slider1" class="buttonn" id="button1"></a>
+               </div>
+               <div class="slide_div" id="slide_2">
+                <img src="{% static 'images/erix2.jpg' %}" alt="" class="imger" id="img2">
+                <a href="#slider2" class="buttonn" id="button2"></a>
+               </div>
+               <div class="slide_div" id="slide_3">
+                <img src="{% static 'images/erix3.jpg' %}" alt="" class="imger" id="img3">
+                <a href="#slider3" class="buttonn" id="button3"></a>
+               </div>
+              {% comment %}
+                 <div class="slide_div" id="slide_4">
+                  <img src="{% static 'images/erix4.jpg' %}" alt="" class="imger" id="img4">
+                  <a href="#slider4" class="buttonn" id="button4"></a>
+                 </div>
+              {% endcomment %}
+               <div class="slide_div" id="slide_5">
+                <img src="{% static 'images/erix5.jpg' %}" alt="" class="imger" id="img5" checked>
+                <a href="#slider5" class="buttonn" id="button5"></a>
+               </div>
+               <div class="slide_div" id="slide_6">
+                <img src="{% static 'images/erix6.jpg' %}" alt="" class="imger" id="img6">
+                <a href="#slider6" class="buttonn" id="button6"></a>
+               </div>
+               <div class="slide_div" id="slide_7">
+                <img src="{% static 'images/erix7.jpg' %}" alt="" class="imger" id="img7">
+                <a href="#slider7" class="buttonn" id="button7"></a>
+               </div>
+               <div class="slide_div" id="slide_8">
+                <img src="{% static 'images/erix8.jpg' %}" alt="" class="imger" id="img8">
+                <a href="#slider8" class="buttonn" id="button8"></a>
+               </div>
+    
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 contacti">
+        <div class="container">
+            <h2 class="text-center mb-4">Wanna Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center cont-det">
+                    <h3>Contact Details</h3><br><br>
+                    <p><h4 style="color: grey;">Address:</h4> Qutaibah Ibn Muslim <br>
+                        4566, As Suq Dist.<br>
+                        DAMMAM ( Saudi Arabia )<br>
+                        Near Dana mall Behind Alraji Bank<br>
+                        32242</p>
+                    <p><h4 style="color: grey;">Email:</h4> <a href="mailto:info@salon.com">salihnk48@gmail.com</a></p>
+                    <p><h4 style="color: grey;">Phone:</h4> 00 966 54 287 8890</p>
+                    
+                    <a href="#home" class="btn btn-primary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4 bg-dark text-white">
+        <div class="container">
+            <p>&copy; 2024 Salon. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+
+
+
+/* Desktop styles */
+@media (min-width: 1500px) {
+    /* styles for desktop screens */
+    .body-section {
+        margin: 30% 0 0 30%;
+        margin-bottom: 1%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .body-section h1 {
+        font-size: 4rem;
+    }
+  }
+  
+  /* Tablet styles */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    /* styles for tablet screens */
+    .header {
+        padding: 10px;
+        margin: 30px 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .body-section {
+        margin: 15% 0;
+        padding-bottom: 100px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 767px) {
+    /* styles for mobile screens */
+    .header {
+        flex-direction: column;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    .hero img {
+        width: 80%;
+    }
+
+    .gallery .imgContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery .slide_div {
+        margin: 20px 0;
+    }
+
+    .contacti {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 20px;
+    }
+
+    .footer {
+        padding: 10px;
+    }
+  }
+
+
+/* Global styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85) ), url('https://cdn.pixabay.com/photo/2020/05/27/01/05/barber-5225274_640.jpg') ;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.header{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid cadetblue; /* Added border width */
+    padding: 20px; /* Added padding */
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly between items */
+    align-items: center;
+    width: 100%; /* Adjusted width for better alignment */
+}
+
+.nav-item {
+    margin: 0 80px; /* Adjust spacing between items */
+}
+
+.nav-link {
+    text-decoration: none;
+    padding: 20px 30px;
+    display: inline-block;
+    color: bisque;
+}
+
+.nav-link.btn {
+    background-color: cadetblue; /* Change this to the desired background color */
+    color: #2468d0; /* Text color */
+    padding: 10px 15px;
+    border-radius: 5px; /* Optional: makes the button corners rounded */
+    text-decoration: none;
+}
+
+.nav-link.btn:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+    color: #fff; /* Keep the text color white on hover */
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+    text-align: center; /* Center text */
+    padding: 5% 0; /* Adjust padding as needed */
+    height: 100vh;
+}
+.display-4 {
+    padding-top: 0%; /* Remove default margin */
+}
+
+.btn-secondary {
+    margin-top: 20px; /* Space between heading and button */
+}
+.salon-image {
+    width: 50%; /* Adjust the size as needed */
+    opacity: 0.5; /* Adjust the transparency as needed */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity change */
+    padding-bottom: 20%;
+    padding-left: 10%;
+} 
+
+.header button{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: black;
+    cursor: crosshair;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+
+    transition: background-color 0.3s ease;
+}
+.header button :hover{
+    background-color: darkcyan;
+    color: white;
+}
+
+
+.containerr{
+    width: 100%;
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainerr{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: left 1s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+
+.imger{
+    position: relative;
+    height: 400px;
+    width: 250px;
+    filter: saturate(10%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.buttonn{
+    
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.buttonn:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target ~ .imgContainerr #img1,
+#slider1:target ~ .imgContainerr #button1{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider2:target ~ .imgContainerr #img2,
+#slider2:target ~ .imgContainerr #button2{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider3:target ~ .imgContainerr #img3,
+#slider3:target ~ .imgContainerr #button3{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider4:target ~ .imgContainerr #img4,
+#slider4:target ~ .imgContainerr #button4{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider5:target ~ .imgContainerr #img5,
+#slider5:target ~ .imgContainerr #button5{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider6:target ~ .imgContainerr #img6,
+#slider6:target ~ .imgContainerr #button6{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider7:target ~ .imgContainerr #img7,
+#slider7:target ~ .imgContainerr #button7{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider8:target ~ .imgContainerr #img8,
+#slider8:target ~ .imgContainerr #button8{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+ 
+#slider1:target ~ .imgContainerr{
+    left: 60%;
+}
+#slider2:target ~ .imgContainerr{
+    left: 40%;
+}
+#slider3:target ~ .imgContainerr{
+    left: 20%;
+}
+#slider4:target ~ .imgContainerr{
+    left: 0%;
+}
+#slider5:target ~ .imgContainerr{
+    left: -20%;
+}
+#slider6:target ~ .imgContainerr{
+    left: -40%;
+}
+#slider7:target ~ .imgContainerr{
+    left: -60%;
+}
+#slider8:target ~ .imgContainerr{
+    left: -80%;
+}
+
+.gal{
+    color: rosybrown;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500%;
+    padding-top: 300px;
+}
+
+
+.contacti{
+    color: rosybrown;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 100px;
+    margin-top: 200px;
+    
+}
+
+
+/* .contacti h4{
+    color: rgb(222, 206, 222) !important;
+}*/
+
+
+
+
+
+
+.body{
+    background-image: "C:\Users\sarat\salon\booking\static\images\saloon.jpg";
+}
+.body-section{
+    width: 100%;
+    margin: 20% 10% 0 5%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rosybrown;
+    justify-content: center;
+    enable-background: new;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 200px;
+    text-align: center;
+
+}
+
+
+.serv {
+    color: rosybrown;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 500%;
+    padding-top: 500px;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerw{
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card{
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card > .row{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+
+}
+
+.card > .row > .icon{
+    background: #233;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+
+}
+
+.card > .row > .description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description p{
+    color: darkslateblue;
+    padding: 5px;
+    background-color: yellow;
+}
+
+.description h4{
+   text-transform: uppercase; 
+}
+
+input{
+    display: none;
+}
+
+input:checked + label{
+    width: 600px;
+}
+
+input:checked + label .description{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for ="c1"]{
+    background-image: url('../images/haircut.jpeg');
+}
+
+.card[for ="c2"]{
+    background-image: url('../images/beard_setting.jpeg');
+}
+
+.card[for ="c3"]{
+    background-image: url('../images/hair_coloring.jpeg');
+}
+
+.card[for ="c4"]{
+    background-image: url('../images/henna_treatment.jpg');
+}
+
+.card[for ="c5"]{
+    background-image: url('../images/head_massage.jpeg');
+}
+
+.card[for ="c6"]{
+    background-image: url('../images/beard_coloring.jpeg');
+}
+
+
+
+
+.body-section p{
+    text-align: left;
+}
+.body h1{
+    font-size: 50px;
+}

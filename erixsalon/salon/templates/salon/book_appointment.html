@@ -1,0 +1,15 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Appointment</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>Book an Appointment</h1>
+    <p>Please click the link below to book an appointment:</p>
+    <a href="https://forms.gle/SxUFpSF5EFVdpbt9A" target="_blank">Book an Appointment</a>
+    <br>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>
