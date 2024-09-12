@@ -375,7 +375,7 @@ body {
 
 
 .body{
-    background-image: "C:\Users\sarat\salon\booking\static\images\saloon.jpg";
+    background-image: "C:\Users\sarat\salon\booking\static\images\saloon_o.jpg";
 }
 .body-section{
     width: 100%;
@@ -488,27 +488,27 @@ input:checked + label .description{
 }
 
 .card[for ="c1"]{
-    background-image: url('../images/haircut.jpeg');
+    background-image: url('../images/haircut_l.jpeg');
 }
 
 .card[for ="c2"]{
-    background-image: url('../images/beard_setting.jpeg');
+    background-image: url('../images/beard_setting_b.jpeg');
 }
 
 .card[for ="c3"]{
-    background-image: url('../images/hair_coloring.jpeg');
+    background-image: url('../images/hair_coloring_k.jpeg');
 }
 
 .card[for ="c4"]{
-    background-image: url('../images/henna_treatment.jpg');
+    background-image: url('../images/henna_treatment_n.jpg');
 }
 
 .card[for ="c5"]{
-    background-image: url('../images/head_massage.jpeg');
+    background-image: url('../images/head_massage_m.jpeg');
 }
 
 .card[for ="c6"]{
-    background-image: url('../images/beard_coloring.jpeg');
+    background-image: url('../images/beard_coloring_a.jpeg');
 }
 
 
